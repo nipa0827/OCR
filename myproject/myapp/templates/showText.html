@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    {% for content in file_content %}
+<p>
+    {{content}}
+</p>
+
+{% endfor %}
+
+
+<button value="Download"> <a href="{% url 'downloadAsText' %}" >DownloadAsText</a></button> &nbsp;&nbsp;&nbsp;
+<button value="Download"> <a href="{% url 'downloadAsDOC' %}" >DownloadAsDOC</a></button> &nbsp;&nbsp;&nbsp;
+<button value="Download"> <a href="{% url 'downloadAsCSV' %}" >DownloadAsCSV</a></button>
+
+{% endblock %}

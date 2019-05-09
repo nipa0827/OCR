@@ -1,0 +1,15 @@
+.page-header-custom{
+    background-color: powderblue;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+ }
